@@ -1,5 +1,4 @@
 def record_spell(spell_name: str, ingredients: str) -> str:
-    # Late import avoids circular dependency at module import time.
     from .validator import validate_ingredients
 
     validation_result = validate_ingredients(ingredients)
