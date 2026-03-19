@@ -2,7 +2,7 @@ from alchemy.grimoire import record_spell, validate_ingredients
 
 
 if __name__ == "__main__":
-    print("=== Circular Curse Breaking ===")
+    print("=== Circular Curse Breaking ===\n")
 
     print("Testing ingredient validation:")
     print(
@@ -14,7 +14,7 @@ if __name__ == "__main__":
         f'{validate_ingredients("dragon scales")}'
     )
 
-    print("Testing spell recording with validation:")
+    print("\nTesting spell recording with validation:")
     print(
         'record_spell("Fireball", "fire air"): '
         f'{record_spell("Fireball", "fire air")}'
@@ -24,11 +24,11 @@ if __name__ == "__main__":
         f'{record_spell("Dark Magic", "shadow")}'
     )
 
-    print("Testing late import technique:")
+    print("\nTesting late import technique:")
     print(
         'record_spell("Lightning", "air"): '
         f'{record_spell("Lightning", "air")}'
     )
 
-    print("Circular dependency curse avoided using late imports!")
+    print("\nCircular dependency curse avoided using late imports!")
     print("All spells processed safely!")

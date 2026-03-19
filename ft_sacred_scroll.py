@@ -11,7 +11,7 @@ def test_package_level_access(function_name: str) -> None:
 
 
 if __name__ == "__main__":
-    print("=== Sacred Scroll Mastery ===")
+    print("=== Sacred Scroll Mastery ===\n")
 
     print("Testing direct module access:")
     print(f"alchemy.elements.create_fire(): {alchemy.elements.create_fire()}")
@@ -23,12 +23,12 @@ if __name__ == "__main__":
     )
     print(f"alchemy.elements.create_air(): {alchemy.elements.create_air()}")
 
-    print("Testing package-level access (controlled by __init__.py):")
+    print("\nTesting package-level access (controlled by __init__.py):")
     test_package_level_access("create_fire")
     test_package_level_access("create_water")
     test_package_level_access("create_earth")
     test_package_level_access("create_air")
 
-    print("Package metadata:")
+    print("\nPackage metadata:")
     print(f"Version: {alchemy.__version__}")
     print(f"Author: {alchemy.__author__}")
